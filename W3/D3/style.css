@@ -1,0 +1,36 @@
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    background-image: url("https://img.freepik.com/vector-premium/bomba-dibujos-animados_6317-1596.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.bomb1:hover {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/015/205/341/non_2x/explosion-of-nuclear-bomb-icon-cartoon-style-vector.jpg");
+}
+
+.bomb2:hover,
+.bomb3:hover,
+.bomb4:hover,
+.bomb5:hover,
+.bomb6:hover,
+.bomb7:hover,
+.bomb8:hover,
+.bomb9:hover {
+    background-image: url("https://www.shutterstock.com/image-vector/water-bottle-glass-trendy-doodle-600nw-2387048111.jpg");
+}
