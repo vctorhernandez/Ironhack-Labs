@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background: rgb(227, 227, 227);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    padding: 0 10px;
+    color: #666;
+}
+
+.card a {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 15px;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.card a:hover {
+    background-color: #0056b3;
+}
+
+@media (min-width: 1200px) {
+    .gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    .card {
+        width: 30%;
+        max-width: 350px;
+        background: white;
+    }
+}
