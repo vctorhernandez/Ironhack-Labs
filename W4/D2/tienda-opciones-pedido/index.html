@@ -15,7 +15,7 @@
             <form action="recibido.html" method="GET">
                 <div>
                     <label for="tratamiento">Tratamiento:</label>
-                    <select id="tratamiento" name="tratamiento">
+                    <select id="tratamiento" name="tratamiento" required>
                         <option value="" disabled selected>Selecciona una opción</option>
                         <option value="sr">Sr</option>
                         <option value="sra">Sra</option>
@@ -24,15 +24,15 @@
                 </div>
                 <div>
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required/>
                 </div>
                 <div>
                     <label for="telefono">Teléfono de contacto:</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="123456789" />
+                    <input type="tel" id="telefono" name="telefono" placeholder="123456789" required/>
                 </div>
                 <div>
                     <label for="tipo-pizza">Tipo de pizza:</label>
-                    <select id="tipo-pizza" name="tipo-pizza">
+                    <select id="tipo-pizza" name="tipo-pizza" required>
                         <option value="" disabled selected>Selecciona una opción</option>
                         <option value="margarita">Margarita</option>
                         <option value="cuatro-quesos">Cuatro quesos</option>
